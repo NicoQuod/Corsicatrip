@@ -3,7 +3,7 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	background: #2A2B30;
+	background: #fff;
 	z-index: 10000;
 	height: 230px;
 	overflow: hidden;
@@ -33,7 +33,7 @@
 
 .cbp-af-header h1 {
 	text-transform: uppercase;
-	color: #E44848;
+	color: #F38181;
 	letter-spacing: 4px;
 	font-size: 4em;
 	margin: 0;
@@ -45,14 +45,14 @@
 }
 
 .cbp-af-header nav a {
-	color: #aaa;
+	color: #383838;
 	font-weight: 700;
 	margin: 0 0 0 20px;
 	font-size: 1.4em;
 }
 
 .cbp-af-header nav a:hover {
-	color: #333;
+	color: #87A4BF;
 }
 
 /* Transitions and class for reduced height */
