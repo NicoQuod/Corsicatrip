@@ -10,6 +10,7 @@
 	padding: 0;
 	white-space: nowrap;
 	list-style-type: none;
+    background-color: #383838;
 }
 
 .cbp-fwslider ul li {
@@ -41,7 +42,7 @@
 	top: 50%;
 	width: 50px;
 	height: 100px;
-	background: #47a3da;
+	background: #87A4BF;
 	color: #fff;
 	font-size: 50px;
 	text-align: center;
@@ -86,8 +87,8 @@
 }
 
 .cbp-fwdots span.cbp-fwcurrent {
-	background: #47a3da;
-	box-shadow: 0 0 0 2px #47a3da;
+	background: #F38181;
+	box-shadow: 0 0 0 2px #F38181;
 	-webkit-transition: box-shadow 0.2s ease-in-out;
 	-moz-transition: box-shadow 0.2s ease-in-out;
 	transition: box-shadow 0.2s ease-in-out;
