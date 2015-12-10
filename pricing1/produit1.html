@@ -33,7 +33,61 @@
     <link rel="stylesheet" type="text/css" href="css-lightbox/style.css">  
     
     
-      
+      <style>
+      #map {
+        height: 400px;
+      }
+    </style>
+    <script>
+var map;
+var infowindow;
+
+function initMap() {
+  var pyrmont = {lat: 41.59167, lng: 9.28028};
+
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: pyrmont,
+    zoom: 16,
+      disableDefaultUI: true,
+      scrollwheel: false,
+    navigationControl: false,
+    mapTypeControl: false,
+    scaleControl: false,
+    draggable: false,
+  });
+
+  infowindow = new google.maps.InfoWindow();
+
+  var service = new google.maps.places.PlacesService(map);
+  service.nearbySearch({
+    location: pyrmont,
+    radius: 500,
+    types: ['store']
+  }, callback);
+}
+
+function callback(results, status) {
+  if (status === google.maps.places.PlacesServiceStatus.OK) {
+    for (var i = 0; i < results.length; i++) {
+      createMarker(results[i]);
+    }
+  }
+}
+
+function createMarker(place) {
+  var placeLoc = place.geometry.location;
+  var marker = new google.maps.Marker({
+    map: map,
+    position: place.geometry.location
+  });
+
+  google.maps.event.addListener(marker, 'click', function() {
+    infowindow.setContent(place.name);
+    infowindow.open(map, this);
+  });
+}
+
+    </script>      
      
      
      
@@ -368,7 +422,7 @@ L'arrière-pays de Porto-Vecchio comporte de nombreux villages et hameaux de pla
              
              
              
-             
+             <div id="map"></div>
 <!-- PRINCING -->             
              
               
@@ -445,85 +499,6 @@ L'arrière-pays de Porto-Vecchio comporte de nombreux villages et hameaux de pla
                     <button class="pricing__action "> <a href="#image-2 custom_link_pricing">bla bla bla</a>
 						<div class="lb-overlay" id="image-2">
 							
-							<div>							
-				
-                            
-                        <form class="form-horizontal">
-  <fieldset class="form_light_pricing">
-    <legend>Legend</legend>
-    <div class="form-group">
-      <label for="inputEmail" class="col-lg-2 control-label">Email</label>
-      <div class="col-lg-10">
-        <input type="text" class="form-control" id="inputEmail" placeholder="Email">
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="inputPassword" class="col-lg-2 control-label">Password</label>
-      <div class="col-lg-10">
-        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-        <div class="checkbox">
-          <label>
-            <input type="checkbox"> Checkbox
-          </label>
-        </div>
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="textArea" class="col-lg-2 control-label">Textarea</label>
-      <div class="col-lg-10">
-        <textarea class="form-control" rows="3" id="textArea"></textarea>
-        <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
-      </div>
-    </div>
-    <div class="form-group">
-      <label class="col-lg-2 control-label">Radios</label>
-      <div class="col-lg-10">
-        <div class="radio">
-          <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-            Option one is this
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-            Option two can be something else
-          </label>
-        </div>
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="select" class="col-lg-2 control-label">Selects</label>
-      <div class="col-lg-10">
-        <select class="form-control" id="select">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-          
-          
-        </select>
-        <br>
- 
-        
-     
-      </div>
-      
-  
-    </div>
-  
-  </fieldset>
-</form>
-                        
-                        
-                        
-                        
-                        
-                        
-								
-							</div>
-							<a href="#page" class="lb-close">x Close</a>
 						</div> </button>
                     
                 </div>
@@ -531,16 +506,15 @@ L'arrière-pays de Porto-Vecchio comporte de nombreux villages et hameaux de pla
             <p>N'hésitez pas à nous <a href="../contact/index.html">Contacter</a> pour plus d'informations ou pour avoir une formule sur mesure </p>
         </section>
         
+ 
         
-        
-						
-				
-       <a href=""></a>
-       
+    
         
       
         
     </div>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAe5z3jeRJdkYRhXymLYyZH6qtbfAR3JxM&signed_in=true&libraries=places&callback=initMap" async defer></script>
     <!-- /container -->
     <script src="js/classie.js"></script>
 	<script src="js/dynamics.min.js"></script>
