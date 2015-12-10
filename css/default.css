@@ -251,4 +251,18 @@ a:hover {
     padding: 100px;
 }
 
+#header-image {
+	position: absolute;
+	display: inline-block;
+	background-image: url("../img/corsica200.png"); 
+	height: 100%; 
+	width: 200px;
+	background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.d_i-b {
+	display: inline-block;
+	margin-left: 200px !important;
+}
 
