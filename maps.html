@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Blueprint: On-Scroll Animated Header</title>
+		<meta name="description" content="Blueprint: On-Scroll Animated Header" />
+		<meta name="keywords" content="fixed header, animatied header, javascript, wed design, template, on scroll" />
+		<meta name="author" content="Codrops" />
+		<!-- Bootstrap -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/componentgrid.css" />
+		<link rel="stylesheet" type="text/css" href="css/componentprez.css" />
+				<link rel="stylesheet" type="text/css" href="css/componenttime.css" />
+		<script src="js/modernizr.custom.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/componentslide.css" />
+		<style>
+      #map {
+        height: 1000px;
+      }
+    </style>
+	</head>
+	<body>
+
+			<div class="cbp-af-header">
+				<div class="cbp-af-inner">
+					<h1>Corsica trip</h1>
+					<nav>
+						<a href="index.html">Accueil</a>
+						<a href="maps.html">Carte</a>
+						<a href="#">Contact</a>
+					</nav>
+				</div>
+			</div>
+			
+    <div class="container">	
+			
+<div id="map"></div>
+    <script>
+
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: -34.397, lng: 150.644},
+    zoom: 8
+  });
+}
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAe5z3jeRJdkYRhXymLYyZH6qtbfAR3JxM&callback=initMap"
+        async defer></script>
+		 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+		<!-- classie.js by @desandro: https://github.com/desandro/classie -->
+		<script src="js/classie.js"></script>
+		<script src="js/cbpScroller.js"></script>
+		<script src="js/cbpAnimatedHeader.min.js"></script>
+		<script src="js/jquery.cbpFWSlider.min.js"></script>
+		<script>
+			$( function() {
+				/*
+				- how to call the plugin:
+				$( selector ).cbpFWSlider( [options] );
+				- options:
+				{
+					// default transition speed (ms)
+					speed : 500,
+					// default transition easing
+					easing : 'ease'
+				}
+				- destroy:
+				$( selector ).cbpFWSlider( 'destroy' );
+				*/
+
+				$( '#cbp-fwslider' ).cbpFWSlider();
+
+			} );
+		</script>
+	</body>
+</html>
