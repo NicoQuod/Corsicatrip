@@ -146,6 +146,7 @@
 	display: block;
 	margin-bottom: 2.5em;
 	color: #3b3f45;
+	content: ' ';
 	font-weight: 700;
 	font-size: 1.85em;
 }
