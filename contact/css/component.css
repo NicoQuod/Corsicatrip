@@ -146,7 +146,7 @@
 	display: block;
 	margin-bottom: 2.5em;
 	color: #383838;
-	content: 'Review & Submit';
+	content: 'Finaliser & Envoyer';
 	font-weight: 700;
 	font-size: 1.85em;
 }
@@ -752,7 +752,7 @@ button.fs-continue:hover {
 	text-align: center;
 	background: transparent;
 	color: rgba(0,0,0,0.3);
-	content: 'or press ENTER';
+	content: 'Ou appuyez sur ENTRER';
 	font-size: 0.65em;
 	pointer-events: none;
 }
