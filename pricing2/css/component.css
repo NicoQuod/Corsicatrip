@@ -291,8 +291,8 @@ button.content-switch::before {
 }
 
 .show-content .current button.content-switch {
-	border-color: #c5d3d6;
-	color: #c5d3d6;
+	border-color: #F38181;
+	color: #F38181;
 	-webkit-transform: translate3d(-50%,100%,0);
 	transform: translate3d(-50%,100%,0);
 }
@@ -401,8 +401,10 @@ button.content-switch::before {
 }
 
 .pages .content a {
-	color: #3c89d5;
+	color: #F38181;
 	display: block;
+    text-align: center;
+    font-size: 2.5em;
 }
 
 .pages .content a:hover {
