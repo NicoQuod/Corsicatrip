@@ -39,7 +39,7 @@ html.js,
 }
 
 .dragslider h2 {
-	font-family: 'Playfair Display', serif;
+	font-family: 'Arial', serif;
 	font-size: 8em;
 	font-weight: 700;
 	margin: 0 auto;
@@ -364,7 +364,7 @@ button.content-switch::before {
 	padding: 0.5em 2em;
 	line-height: 1.5;
 	text-align: left;
-	font-family: 'Book Antiqua', Palatino, 'Palatino Linotype', 'Palatino LT STD', Georgia, serif;
+	font-family: 'Arial', Palatino, 'Palatino Linotype', 'Palatino LT STD', Georgia, serif;
 }
 
 .pages .content p:last-child {

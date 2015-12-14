@@ -15,7 +15,7 @@
 
 body {
 	background: #2c3135;
-	color: #c5d3d6;
+	color: #fff;
 	font-weight: 400;
 	font-size: 1em;
 	font-family: 'Lato', Arial, sans-serif;
@@ -103,7 +103,7 @@ a:hover, a:focus {
 	text-align: center;
 	vertical-align: top;
 	background-size: 75%;
-	background-color: rgba(52,73,94,0.7);
+	background-color:  #ED8183;
 	background-repeat: no-repeat;
 	background-position: 50% 85%;
 }
