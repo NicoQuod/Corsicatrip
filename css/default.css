@@ -30,8 +30,8 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
 
 body {
     font-family: 'Lato', Calibri, Arial, sans-serif;
-    color: #47a3da;
-    background-color: #383838;
+    color: #383838;
+    background-color: #efefef;
 }
 
 
@@ -59,7 +59,7 @@ body {
 
 
 a {
-	color: #f0f0f0;
+	color: #F38181;
 	text-decoration: none;
 }
 

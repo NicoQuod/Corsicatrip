@@ -7,7 +7,7 @@
    height:6em;
    background-color:rgba(255,255,255,0);
    border-radius: 100px;
-   border:2px solid white;
+   border:2px solid #87A4BF;
 }
 #wheel{
   margin-top:1em;
@@ -26,7 +26,7 @@
    height:0px;
   border-left: 0.35em solid transparent;
 	border-right: 0.35em solid transparent;
-	border-top: 0.4em solid white;
+	border-top: 0.4em solid #87A4BF;
    -webkit-animation: down2 1s infinite;
    animation: down2 1s infinite;
 }
@@ -38,7 +38,7 @@
    height:0px;
   border-left: 0.35em solid transparent;
 	border-right: 0.35em solid transparent;
-	border-top: 0.4em solid white;
+	border-top: 0.4em solid #87A4BF;
    -webkit-animation: down 1s infinite;
    animation: down 1s infinite;
 }
@@ -50,7 +50,7 @@
    height:0px;
   border-left: 0.35em solid transparent;
 	border-right: 0.35em solid transparent;
-	border-top: 0.4em solid white;
+	border-top: 0.4em solid #87A4BF;
    -webkit-animation: down3 1s infinite;
   animation: down3 1s infinite;
 }
