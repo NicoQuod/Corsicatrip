@@ -330,7 +330,7 @@ button.fs-continue,
 	border: none;
 	border-bottom: 2px solid rgba(0,0,0,0.2);
 	background-color: transparent;
-	color: #fffed8;
+	color: #87A4BF;
 	text-overflow: ellipsis;
 	font-weight: bold;
 	font-size: 1.5em;
@@ -354,11 +354,11 @@ button.fs-continue,
 }
 
 .fs-fields input:focus {
-	background-color: #383838; /* Fixes chrome bug with placeholder */
+	background-color: #fefefe; /* Fixes chrome bug with placeholder */
 }
 
 .fs-form-overview .fs-fields input:focus {
-	background-color: #fffed8; /* Fixes chrome bug with placeholder */
+	background-color: #87A4BF; /* Fixes chrome bug with placeholder */
 }
 
 .fs-form-overview .fs-fields input {
@@ -460,7 +460,7 @@ button.fs-continue,
 	height: 200px;
 	border: 2px solid rgba(0,0,0,0.2);
 	background-color: transparent;
-	color: #fffed8;
+	color: #87A4BF;
 	font-weight: 700;
 	font-size: 0.85em;
 	resize: none;
@@ -501,8 +501,6 @@ button.fs-continue,
 }
 
 .fs-fields input.fs-mark {
-	padding-left: 1em;
-	background-image: url(../img/dollar.svg);
 	background-position: 0% 0.15em;
 	background-size: auto 75%;
 	background-repeat: no-repeat;
