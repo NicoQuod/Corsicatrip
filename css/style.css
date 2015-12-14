@@ -35,7 +35,7 @@ body {
     
     border: 2px solid #fff;
     background: transparent;
-    color: #fff;
+    color: rgba(255,255,255,0.5);
     font-weight: bold;
     padding: 1em 2em;
     letter-spacing: 1px;
@@ -50,10 +50,13 @@ body {
 
 #button input:hover{
     
-    background-color: #4d4d4d;
-    border: none;
-    padding: 10px 20px;
-    font: #4d4d4d;
+     border: 2px solid #fff;
+    background: transparent;
+    color: rgba(255,255,255,1);
+    font-weight: bold;
+    padding: 1em 2em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 
