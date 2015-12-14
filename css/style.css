@@ -28,16 +28,22 @@ body {
 
 #button input{
     
-    background-color: #1B1D20;
-    border: solid 2px red;
+    background-color: #383838;
+    border: none;
     padding: 10px 20px;
+}
+
+#button input value{
+    
+    color: black
 }
 
 #button input:hover{
     
-    background-color: red;
-    border: solid 2px red;
+    background-color: #83FFE1;
+    border: none;
     padding: 10px 20px;
+    font: #4d4d4d;
 }
 
 
@@ -81,7 +87,7 @@ header {
     left: 50%;
     z-index: 999;
     color: #fff;
-    background: rgba(0,0,0,0.5);
+    background: rgba(239,129,131,0.89);
     padding: 60px;
     width: 400px;
     height: 400px;
@@ -102,8 +108,8 @@ header h1 span {
 }
 
 header p {
-    font-family: Cambria, Georgia, serif;
-    font-style: italic;
+    font-family: arial;
+    font-style: light;
 }
 
 /* Video Pages */
