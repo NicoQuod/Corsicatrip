@@ -320,9 +320,9 @@ button.content-switch::before {
 }
 
 .pages .content {
-	background: #dfe3e3;
+	background: #fbfbfb;
 	text-align: center;
-	color: #545b61;
+	color: dimgrey;
 	font-size: 1.5em;
 }
 
@@ -346,7 +346,7 @@ button.content-switch::before {
 .pages .content h2 {
 	font-size: 5em;
 	max-width: 70%;
-	color: #34495e;
+	color: #232323;
 	padding: 2.25em 10px 1em;
 }
 
