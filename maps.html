@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="fr" class="no-js">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>Blueprint: On-Scroll Animated Header</title>
-		<meta name="description" content="Blueprint: On-Scroll Animated Header" />
-		<meta name="keywords" content="fixed header, animatied header, javascript, wed design, template, on scroll" />
-		<meta name="author" content="Codrops" />
+		<title>CorsicaTrip - Carte</title>
 		<!-- Bootstrap -->
         <link href="css/bootstrap.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/default.css" />
@@ -17,41 +14,120 @@
 				<link rel="stylesheet" type="text/css" href="css/componenttime.css" />
 		<script src="js/modernizr.custom.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/componentslide.css" />
+		<script src="http://maps.google.com/maps/api/js?sensor=false" 
+          type="text/javascript"></script>
 		<style>
       #map {
         height: 1000px;
+          margin-top: 230px;
       }
     </style>
+    <script>
+    var styles =     [
+  {
+    "featureType": "water",
+    "stylers": [
+      { "color": "#87A4BF" }
+    ]
+  },{
+    "featureType": "road.highway",
+    "elementType": "geometry",
+    "stylers": [
+      { "color": "#F38181" }
+    ]
+  }
+]
+        </script>
 	</head>
 	<body>
 
 			<div class="cbp-af-header">
+
 				<div class="cbp-af-inner">
-					<h1>Corsica trip</h1>
+					<h1 id="header-image"></h1>
 					<nav>
 						<a href="index.html">Accueil</a>
+						<a href="pricing2/index.html">Nos produits</a>
 						<a href="maps.html">Carte</a>
-						<a href="#">Contact</a>
+						<a href="contact/contact.html">Contact</a>
 					</nav>
 				</div>
 			</div>
 			
-    <div class="container">	
-			
 <div id="map"></div>
     <script>
+var locations = [
+    ['Bastia', 42.70083, 9.45028, 12, 'pricing1/produit1.html'],
+    ['Ajaccio', 41.92667, 8.73694, 11, 'http://www.google.com'],
+    ['porto-Vecchio', 41.59167, 9.28028, 10, ''],
+    ['Calvi', 42.568611, 8.756944, 10, ''],
+    ['Bonifacio', 41.39, 9.15, 10, ''],
+    ['Borgo', 42.554722, 9.428056, 10, ''],
+    ['stflorent', 42.681931, 9.302073, 10, ''],
+    ['monticello', 42.618056, 8.954444, 10, ''],
+    
+    ];
+        
+var styles = [
+    {
+      stylers: [
+        { hue: "#83FFE1" },
+        { saturation: -20 }
+      ]
+    },{
+      featureType: "road",
+      elementType: "geometry",
+      stylers: [
+        { lightness: 100 },
+        { visibility: "simplified" }
+      ]
+    },{
+      featureType: "road",
+      elementType: "labels",
+      stylers: [
+        { visibility: "off" }
+      ]
+    },
+    
+  ];
 
-var map;
-function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 41.92667, lng: 8.73694},
-    zoom: 9,
-      disableDefaultUI: true
-  });
-}
+  // Create a new StyledMapType object, passing it the array of styles,
+  // as well as the name to be displayed on the map type control.
+  var styledMap = new google.maps.StyledMapType(styles,
+    {name: "Styled Map"});
+        
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 9,
+      center: new google.maps.LatLng(42.30, 9.083333),
+    mapTypeControlOptions: {
+      mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+    }
+    });
+        
+     map.mapTypes.set('map_style', styledMap);
+  map.setMapTypeId('map_style')
 
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) {  
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map,
+        url: locations[i][4]
+      });
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+                window.location.href = this.url;
+            
+
+        }
+      })(marker, i));
+    }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAe5z3jeRJdkYRhXymLYyZH6qtbfAR3JxM&callback=initMap"
+   <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAe5z3jeRJdkYRhXymLYyZH6qtbfAR3JxM&callback=initMap"
         async defer></script>
 		 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
