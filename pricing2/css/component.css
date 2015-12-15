@@ -91,17 +91,49 @@ button.slider-switch:hover {
 	opacity: 1;
 }
 
-button-custom {
+#button-custom {
     
-    border: 2px solid #fff;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+    
+}
+
+#button-custom input{
+    
+   /* background-color: #383838;
+    border: none;
+    padding: 10px 20px;*/
+    
+    
+    border: 2px solid #ED8183;
     background: transparent;
-    color: rgba(255,255,255,0.5);
+    color: rgba(237,129,131,0.5);
     font-weight: bold;
     padding: 1em 2em;
     letter-spacing: 1px;
     text-transform: uppercase;
+}
+    
+
+#button-custom input:hover{
+    
+   /* background-color: #383838;
+    border: none;
+    padding: 10px 20px;*/
     
     
+    border: 2px solid #ED8183;
+    background: transparent;
+    color: rgba(237,129,131,1);
+    font-weight: bold;
+    padding: 1em 2em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+
 }
 /* Dragger */
 .img-dragger {
