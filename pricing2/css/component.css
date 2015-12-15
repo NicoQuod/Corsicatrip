@@ -91,6 +91,18 @@ button.slider-switch:hover {
 	opacity: 1;
 }
 
+button-custom {
+    
+    border: 2px solid #fff;
+    background: transparent;
+    color: rgba(255,255,255,0.5);
+    font-weight: bold;
+    padding: 1em 2em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    
+    
+}
 /* Dragger */
 .img-dragger {
 	position: relative;
