@@ -210,7 +210,7 @@ input {
 }
 
 @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
-body { padding-top: 60px; }
+body { }
 .nav.nav-justified > li > a { position: relative; }
 .nav.nav-justified > li > a:hover,
 .nav.nav-justified > li > a:focus { background-color: transparent; }

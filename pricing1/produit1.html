@@ -18,6 +18,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../css/nav.css" />
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/demo.css" />
@@ -27,10 +28,7 @@
     <link rel="stylesheet" type="text/css" href="fonts/feather/style.css">
     <link rel="stylesheet" type="text/css" href="../css/default.css" />
 		<link rel="stylesheet" type="text/css" href="../css/component.css" />
-    
-        
-            
-    <link rel="stylesheet" type="text/css" href="css-lightbox/style.css">  
+   
     
     
       <style>
@@ -102,6 +100,7 @@ function createMarker(place) {
 	<link rel="stylesheet" type="text/css" href="css/flickity.css" />
 	<!-- Component styles -->
 	<link rel="stylesheet" type="text/css" href="css/componentitem.css" />
+
 	<script src="js/modernizr.custom.js"></script>
     <!--[if IE]>
   		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -109,21 +108,33 @@ function createMarker(place) {
 </head>
 
 <body>
-	<div class="cbp-af-header">
+	<nav class="navbar navbar-default">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">CorsicaTrip</a>
+        </div>
 
-				<div class="cbp-af-inner">
-					<h1 id="header-image"></h1>
-					<nav>
-						<a href="../index.html">Accueil</a>
-
-						<a href="../pricing2/index.html">Nos produits</a>
-						<a href="../maps.html">Carte</a>
-						<a href="../contact/contact.html">Contact</a>
-
-
-					</nav>
-				</div>
-			</div>
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+						<li><a href="index.html">Accueil</a></li>
+						<li><a href="pricing2/index.html">Nos produits</a></li>
+						<li><a href="maps.html">Carte</a></li>
+						<li><a href="contact/contact.html">Contact</a></li>
+            <li>
+              <a class="btn btn-default btn-outline btn-circle collapsed"  data-toggle="collapse" href="annonce.html" aria-expanded="false" aria-controls="nav-collapse1">Proposer un bien</a>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+			
     <div class="container">
         <header class="codrops-header">
             <h1><span>Voici</span>Porto-Vecchio</h1>
