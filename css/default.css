@@ -29,7 +29,7 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
 .clearfix:after { clear: both; }
 
 body {
-    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-family: Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
     color: #383838;
     background-color: #efefef;
 }
