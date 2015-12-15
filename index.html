@@ -1,205 +1,230 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>Blueprint: On-Scroll Animated Header</title>
-		<meta name="description" content="Blueprint: On-Scroll Animated Header" />
-		<meta name="keywords" content="fixed header, animatied header, javascript, wed design, template, on scroll" />
-		<meta name="author" content="Codrops" />
-		<meta name="description" content="Fullscreen Video Slideshow with BigVideo.js - The jQuery Plugin for Big Background Video" />
-    <meta name="author" content="John Polacek for Codrops" />
-    <meta name="keywords" content="fullscreen, video, slideshow, bigvideo.js, jquery, background, images" />
-    <meta name="viewport" content="width=device-width">
-		<!-- Bootstrap -->
-        <link rel="shortcut icon" href="../favicon.ico"> 
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300' rel='stylesheet' type='text/css' />
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bigvideo.css">
-       <script src="js/modernizr-2.5.3.min.js"></script>
-        <link href="css/bootstrap.css" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="css/default.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<link rel="stylesheet" type="text/css" href="css/componentgrid.css" />
-		<link rel="stylesheet" type="text/css" href="css/componentprez.css" />
-        <link rel="stylesheet" type="text/css" href="css/componenttime.css" />
-		<script src="js/modernizr.custom.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/componentslide.css" />
-		
-		
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blueprint: On-Scroll Animated Header</title>
+	<meta name="description" content="Blueprint: On-Scroll Animated Header" />
+	<meta name="keywords" content="fixed header, animatied header, javascript, wed design, template, on scroll" />
+	<meta name="author" content="Codrops" />
+	<meta name="description" content="Fullscreen Video Slideshow with BigVideo.js - The jQuery Plugin for Big Background Video" />
+	<meta name="author" content="John Polacek for Codrops" />
+	<meta name="keywords" content="fullscreen, video, slideshow, bigvideo.js, jquery, background, images" />
+	<meta name="viewport" content="width=device-width">
+	<!-- Bootstrap -->
+	<link rel="shortcut icon" href="../favicon.ico">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300' rel='stylesheet' type='text/css' />
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bigvideo.css">
+
+	<link href="css/bootstrap.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/default.css" />
+
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<link rel="stylesheet" type="text/css" href="css/componentgrid.css" />
+	<link rel="stylesheet" type="text/css" href="css/componentprez.css" />
+	<link rel="stylesheet" type="text/css" href="css/componenttime.css" />
+
+	<link rel="stylesheet" type="text/css" href="css/componentslide.css" />
+	<link rel="stylesheet" type="text/css" href="css/nav.css" />
+
+	<script src="js/modernizr-2.5.3.min.js"></script>
+	<script src="js/modernizr.custom.js"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
 
 	<body>
-
-			<div class="cbp-af-header">
-
-				<div class="cbp-af-inner">
-					<h1 id="header-image"></h1>
-					<nav>
-						<a href="index.html">Accueil</a>
-						<a href="pricing2/index.html">Nos produits</a>
-						<a href="maps.html">Carte</a>
-						<a href="contact/contact.html">Contact</a>
-					</nav>
-				</div>
-			</div>
-			
-			
-			
-			
-			<header>
-        <h1>Voyagez de façon Alternative</h1>
-        <p>Découvrez grace à notre expérience des coins de la Corse que vous n'avez encore jamais vu. Nous prenons soin de vous faire découvrir des lieux typiques de l'île</p>
-        
-        <div id="button">
-        <input type="button" value="Commencez" onclick="window.location.href='pricing2/index.html'">
-</div>
-   
-    </header>
-			
-			
-			
-			
-			
-			
-    <!-- Codrops top bar -->
-
-    <div class="wrapper">
-        <div class="screen" id="screen-1" data-video="vid/CORSICATRIP_final.mp4">
-            <h1 class="video-title">#1 Bird</h1>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
         </div>
-    </div>
 
-   <button type="button">Click Me!</button>
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+						<li><a href="index.html">Accueil</a></li>
+						<li><a href="pricing2/index.html">Nos produits</a></li>
+						<li><a href="maps.html">Carte</a></li>
+						<li><a href="contact/contact.html">Contact</a></li>
+            <li>
+              <a class="btn btn-default btn-outline btn-circle collapsed"  data-toggle="collapse" href="#nav-collapse1" aria-expanded="false" aria-controls="nav-collapse1">Envoyer votre projet</a>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
 
-    <!-- BigVideo Dependencies -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-1.8.1.min.js"><\/script>')</script>
-    <script src="js/jquery-ui-1.8.22.custom.min.js"></script>
-    <script src="js/jquery.imagesloaded.min.js"></script>
-    <script src="http://vjs.zencdn.net/c/video.js"></script>
+		<header>
+			<h1>Voyagez de façon Alternative</h1>
+			<p>Découvrez grace à notre expérience des coins de la Corse que vous n'avez encore jamais vu. Nous prenons soin de vous faire découvrir des lieux typiques de l'île</p>
 
-    <!-- BigVideo -->
-    <script src="js/bigvideo.js"></script>
+			<div id="button">
+				<input type="button" value="Commencez" onclick="window.location.href='pricing2/index.html'">
+			</div>
 
-    <!-- Tutorial Demo -->
-    <script src="js/jquery.transit.min.js"></script>
-    <script>
-        $(function() {
+		</header>
 
-            // Use Modernizr to detect for touch devices, 
-            // which don't support autoplay and may have less bandwidth, 
-            // so just give them the poster images instead
-            var screenIndex = 1,
-                numScreens = $('.screen').length,
-                isTransitioning = false,
-                transitionDur = 1000,
-                BV,
-                videoPlayer,
-                isTouch = Modernizr.touch,
-                $bigImage = $('.big-image'),
-                $window = $(window);
-            
-            if (!isTouch) {
-                // initialize BigVideo
-                BV = new $.BigVideo({forceAutoplay:isTouch});
-                BV.init();
-                showVideo();
-                
-                BV.getPlayer().addEvent('loadeddata', function() {
-                    onVideoLoaded();
-                });
 
-                // adjust image positioning so it lines up with video
-                $bigImage
-                    .css('position','relative')
-                    .imagesLoaded(adjustImagePositioning);
-                // and on window resize
-                $window.on('resize', adjustImagePositioning);
-            }
-            
-            // Next button click goes to next div
-            $('#next-btn').on('click', function(e) {
-                e.preventDefault();
-                if (!isTransitioning) {
-                    next();
-                }
-            });
+		<!-- Codrops top bar -->
 
-            function showVideo() {
-                BV.show($('#screen-'+screenIndex).attr('data-video'),{ambient:true});
-            }
+		<div class="wrapper">
+			<div class="screen" id="screen-1" data-video="vid/CORSICATRIP_final.mp4">
+				<h1 class="video-title">#1 Bird</h1>
+			</div>
+		</div>
 
-            function next() {
-                isTransitioning = true;
-                
-                // update video index, reset image opacity if starting over
-                if (screenIndex === numScreens) {
-                    $bigImage.css('opacity',1);
-                    screenIndex = 1;
-                } else {
-                    screenIndex++;
-                }
-                
-                if (!isTouch) {
-                    $('#big-video-wrap').transit({'left':'-100%'},transitionDur)
-                }
-                    
-                (Modernizr.csstransitions)?
-                    $('.wrapper').transit(
-                        {'left':'-'+(100*(screenIndex-1))+'%'},
-                        transitionDur,
-                        onTransitionComplete):
-                    onTransitionComplete();
-            }
+		<button type="button">Click Me!</button>
 
-            function onVideoLoaded() {
-                $('#screen-'+screenIndex).find('.big-image').transit({'opacity':0},500)
-            }
+		<!-- BigVideo Dependencies -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+		<script>
+			window.jQuery || document.write('<script src="js/jquery-1.8.1.min.js"><\/script>')
+		</script>
+		<script src="js/jquery-ui-1.8.22.custom.min.js"></script>
+		<script src="js/jquery.imagesloaded.min.js"></script>
+		<script src="http://vjs.zencdn.net/c/video.js"></script>
 
-            function onTransitionComplete() {
-                isTransitioning = false;
-                if (!isTouch) {
-                    $('#big-video-wrap').css('left',0);
-                    showVideo();
-                }
-            }
+		<!-- BigVideo -->
+		<script src="js/bigvideo.js"></script>
 
-            function adjustImagePositioning() {
-                $bigImage.each(function(){
-                    var $img = $(this),
-                        img = new Image();
+		<!-- Tutorial Demo -->
+		<script src="js/jquery.transit.min.js"></script>
+		<script>
+			$(function() {
 
-                    img.src = $img.attr('src');
+				// Use Modernizr to detect for touch devices,
+				// which don't support autoplay and may have less bandwidth,
+				// so just give them the poster images instead
+				var screenIndex = 1,
+					numScreens = $('.screen').length,
+					isTransitioning = false,
+					transitionDur = 1000,
+					BV,
+					videoPlayer,
+					isTouch = Modernizr.touch,
+					$bigImage = $('.big-image'),
+					$window = $(window);
 
-                    var windowWidth = $window.width(),
-                        windowHeight = $window.height(),
-                        r_w = windowHeight / windowWidth,
-                        i_w = img.width,
-                        i_h = img.height,
-                        r_i = i_h / i_w,
-                        new_w, new_h, new_left, new_top;
+				if (!isTouch) {
+					// initialize BigVideo
+					BV = new $.BigVideo({
+						forceAutoplay: isTouch
+					});
+					BV.init();
+					showVideo();
 
-                    if( r_w > r_i ) {
-                        new_h   = windowHeight;
-                        new_w   = windowHeight / r_i;
-                    }
-                    else {
-                        new_h   = windowWidth * r_i;
-                        new_w   = windowWidth;
-                    }
+					BV.getPlayer().addEvent('loadeddata', function() {
+						onVideoLoaded();
+					});
 
-                    $img.css({
-                        width   : new_w,
-                        height  : new_h,
-                        left    : ( windowWidth - new_w ) / 2,
-                        top     : ( windowHeight - new_h ) / 2
-                    })
+					// adjust image positioning so it lines up with video
+					$bigImage
+						.css('position', 'relative')
+						.imagesLoaded(adjustImagePositioning);
+					// and on window resize
+					$window.on('resize', adjustImagePositioning);
+				}
 
-                });
+				// Next button click goes to next div
+				$('#next-btn').on('click', function(e) {
+					e.preventDefault();
+					if (!isTransitioning) {
+						next();
+					}
+				});
 
-            }
-        });
-    </script>
-	</body>
+				function showVideo() {
+					BV.show($('#screen-' + screenIndex).attr('data-video'), {
+						ambient: true
+					});
+				}
+
+				function next() {
+					isTransitioning = true;
+
+					// update video index, reset image opacity if starting over
+					if (screenIndex === numScreens) {
+						$bigImage.css('opacity', 1);
+						screenIndex = 1;
+					} else {
+						screenIndex++;
+					}
+
+					if (!isTouch) {
+						$('#big-video-wrap').transit({
+							'left': '-100%'
+						}, transitionDur)
+					}
+
+					(Modernizr.csstransitions) ?
+					$('.wrapper').transit({
+								'left': '-' + (100 * (screenIndex - 1)) + '%'
+							},
+							transitionDur,
+							onTransitionComplete):
+						onTransitionComplete();
+				}
+
+				function onVideoLoaded() {
+					$('#screen-' + screenIndex).find('.big-image').transit({
+						'opacity': 0
+					}, 500)
+				}
+
+				function onTransitionComplete() {
+					isTransitioning = false;
+					if (!isTouch) {
+						$('#big-video-wrap').css('left', 0);
+						showVideo();
+					}
+				}
+
+				function adjustImagePositioning() {
+					$bigImage.each(function() {
+						var $img = $(this),
+							img = new Image();
+
+						img.src = $img.attr('src');
+
+						var windowWidth = $window.width(),
+							windowHeight = $window.height(),
+							r_w = windowHeight / windowWidth,
+							i_w = img.width,
+							i_h = img.height,
+							r_i = i_h / i_w,
+							new_w, new_h, new_left, new_top;
+
+						if (r_w > r_i) {
+							new_h = windowHeight;
+							new_w = windowHeight / r_i;
+						} else {
+							new_h = windowWidth * r_i;
+							new_w = windowWidth;
+						}
+
+						$img.css({
+							width: new_w,
+							height: new_h,
+							left: (windowWidth - new_w) / 2,
+							top: (windowHeight - new_h) / 2
+						})
+
+					});
+
+				}
+			});
+		</script>
+		</body>
 </html>
