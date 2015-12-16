@@ -13,9 +13,7 @@
   position: relative;
   overflow: hidden !important;
 }
-.navbar .navbar-collapse .navbar-right > li:last-child {
-  padding-left: 22px;
-}
+
 .navbar .nav-collapse {
   position: absolute;
   z-index: 1;
