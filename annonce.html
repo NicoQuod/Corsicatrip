@@ -39,13 +39,16 @@
         </div>
 
         <div class="collapse navbar-collapse" id="navbar-collapse-1">
+          <div class="collapse navbar-collapse" id="navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
 						<li><a href="/index.html">Accueil</a></li>
-						<li><a href="pricing2/index.html">Nos produits</a></li>
-						<li><a href="/maps.html">Carte</a></li>
-						<li><a href="/annonce.html">Déposer une annonce</a></sli>
-						<li><a href="/contact/contact.html">Contact</a></li>
-          </ul>
+						<li><a href="/pricing2/index.html">Nos produits</a></li>
+						<li><a href="maps.html">Carte</a></li>
+						<li><a href="contact/contact.html">Contact</a></li>
+            <li>
+              <a class="btn btn-default btn-outline btn-circle collapsed"  data-toggle="collapse" href="/annonce.html" aria-expanded="false" aria-controls="nav-collapse1">Proposer un bien</a>
+            </li>
+        
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container -->
     </nav><!-- /.navbar -->
@@ -57,30 +60,31 @@
     
 			<div class="row">
 		<div class="[ col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3" role="tabpanel">
+           <h3 style="margin-bottom: 25px; text-align: center;">Quel type de bien voulez-vous nous soumettre ?</h1>
             <div class="col-xs-4 col-sm-12">
                 <!-- Nav tabs -->
                 <ul class="[ nav nav-justified ]" id="nav-tabs" role="tablist">
                     <li role="presentation" class="active">
                         <a href="#dustin" aria-controls="dustin" role="tab" data-toggle="tab">
-                            <img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/dustinlamont/128.jpg" />
+                            <img class="img-circle" src="images/transport2.png" />
                            
                         </a>
                     </li>
                     <li role="presentation" class="">
                         <a href="#daksh" aria-controls="daksh" role="tab" data-toggle="tab">
-                            <img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/dakshbhagya/128.jpg" />
+                            <img class="img-circle" src="images/transport3.png" />
                             
                         </a>
                     </li>
                     <li role="presentation" class="">
                         <a href="#anna" aria-controls="anna" role="tab" data-toggle="tab">
-                            <img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/annapickard/128.jpg" />
+                            <img class="img-circle" src="images/habitation.png" />
                         
                         </a>
                     </li>
                     <li role="presentation" class="">
                         <a href="#wafer" aria-controls="wafer" role="tab" data-toggle="tab">
-                            <img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/waferbaby/128.jpg" />
+                            <img class="img-circle" src="images/transports.png" />
                         
                         </a>
                     </li>
@@ -91,37 +95,33 @@
                 <div class="tab-content" id="tabs-collapse">            
                     <div role="tabpanel" class="tab-pane fade in active" id="dustin">
                         <div class="tab-inner">                    
-                            <p class="lead">Etiam tincidunt enim et pretium efficitur. Donec auctor leo sollicitudin eros iaculis sollicitudin.</p>
+                            <p class="lead">Vélo, Quad</p>
                             <hr>
-                            <p><strong class="text-uppercase">Dustin Lamont</strong></p>
-                            <p><em class="text-capitalize"> Senior web developer</em> at <a href="#">Apple</a></p>                 
+                                         
                         </div>
                     </div>
                     
                     <div role="tabpanel" class="tab-pane fade" id="daksh">
                         <div class="tab-inner">
-                            <p class="lead">Suspendisse dictum gravida est, nec consequat tortor venenatis a. Suspendisse vitae venenatis sapien.</p>
+                            <p class="lead">Voiture, motos, bateau, jetski</p>
                             <hr>
-                            <p><strong class="text-uppercase">Daksh Bhagya</strong></p>
-                            <p><em class="text-capitalize"> UX designer</em> at <a href="#">Google</a></p>
+                            
+        
                         </div>
                     </div>
-                    
+
                     <div role="tabpanel" class="tab-pane fade" id="anna">
                         <div class="tab-inner">
-                            <p class="lead">Nullam suscipit ante ac arcu placerat, nec sagittis quam volutpat. Vestibulum aliquam facilisis velit ut ultrices.</p>
+                            <p class="lead">Bien immobilier, Hotel, Maison, Villa</p>
                             <hr>
-                            <p><strong class="text-uppercase">Anna Pickard</strong></p>
-                            <p><em class="text-capitalize"> Master web developer</em> at <a href="#">Intel</a></p>
+    
                         </div> 
                     </div>
                     
                     <div role="tabpanel" class="tab-pane fade" id="wafer">
                         <div class="tab-inner">
-                            <p class="lead"> Fusce erat libero, fermentum quis sollicitudin id, venenatis nec felis. Morbi sollicitudin gravida finibus.</p>
+                            <p class="lead"> Loisirs, Randonnée, Balade en mer, Vol en hélicoptère</p>
                             <hr>
-                            <p><strong class="text-uppercase">Wafer Baby</strong></p>
-                            <p><em class="text-capitalize"> Web designer</em> at <a href="#">Microsoft</a></p>
                         </div>
                     </div>
                 </div>
@@ -138,22 +138,22 @@
                         <br style="clear:both">
                                     <h3 style="margin-bottom: 25px; text-align: center;">Contactez nous pour déposez votre annonce</h3>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                                        <input type="text" class="form-control-custom" id="name" name="name" placeholder="Name" required>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
+                                        <input type="text" class="form-control-custom" id="email" name="email" placeholder="Email" required>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Mobile Number" required>
+                                        <input type="text" class="form-control-custom" id="mobile" name="mobile" placeholder="Mobile Number" required>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                                        <input type="text" class="form-control-custom" id="subject" name="subject" placeholder="Subject" required>
                                     </div>
                                     <div class="form-group">
-                                    <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="140" rows="7"></textarea>                 
+                                    <textarea class="form-control-custom" type="textarea" id="message" placeholder="Message" maxlength="140" rows="7"></textarea>                 
                                     </div>
 
-                        <button type="button" id="submit" name="submit" class="btn btn-primary pull-right">Valider</button>
+                       <button class="fs-continue fs-show">ENVOYER</button>
                         </form>
                     </div>
                 </div>
